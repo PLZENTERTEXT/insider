@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/insidersec/insider"
-	"github.com/insidersec/insider/engine"
-	"github.com/insidersec/insider/rule"
+	"github.com/PLZENTERTEXT/insider"
+	"github.com/PLZENTERTEXT/insider/engine"
+	"github.com/PLZENTERTEXT/insider/rule"
 )
 
 const (

@@ -13,7 +13,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/insidersec/insider/report"
+	"github.com/PLZENTERTEXT/insider/report"
 )
 
 type JavaScriptAnalyzer struct {

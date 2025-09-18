@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"sync"
 
-	"github.com/insidersec/insider/report"
+	"github.com/PLZENTERTEXT/insider/report"
 )
 
 type spawnFn func(file InputFile, rules []Rule) error

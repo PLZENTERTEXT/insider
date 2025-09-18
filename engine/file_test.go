@@ -3,7 +3,7 @@ package engine_test
 import (
 	"testing"
 
-	"github.com/insidersec/insider/engine"
+	"github.com/PLZENTERTEXT/insider/engine"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

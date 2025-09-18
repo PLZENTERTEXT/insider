@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/insidersec/insider/engine"
-	"github.com/insidersec/insider/rule"
+	"github.com/PLZENTERTEXT/insider/engine"
+	"github.com/PLZENTERTEXT/insider/rule"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

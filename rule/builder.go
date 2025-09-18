@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/insidersec/insider/engine"
+	"github.com/PLZENTERTEXT/insider/engine"
 )
 
 type RuleBuilder struct{}

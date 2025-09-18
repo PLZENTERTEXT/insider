@@ -9,7 +9,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/insidersec/insider/report"
+	"github.com/PLZENTERTEXT/insider/report"
 )
 
 // POM or the Project Object Model is the fundamental unit

@@ -3,7 +3,7 @@ package rule
 import (
 	"regexp"
 
-	"github.com/insidersec/insider/engine"
+	"github.com/PLZENTERTEXT/insider/engine"
 )
 
 type excludeFn func(content string, rule Rule) (bool, error)

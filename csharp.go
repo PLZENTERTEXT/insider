@@ -3,7 +3,7 @@ package insider
 import (
 	"context"
 
-	"github.com/insidersec/insider/report"
+	"github.com/PLZENTERTEXT/insider/report"
 )
 
 type CsharpAnalyzer struct {

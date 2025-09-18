@@ -8,8 +8,8 @@ import (
 	"os"
 	"regexp"
 
-	"github.com/insidersec/insider/engine"
-	"github.com/insidersec/insider/report"
+	"github.com/PLZENTERTEXT/insider/engine"
+	"github.com/PLZENTERTEXT/insider/report"
 )
 
 const (

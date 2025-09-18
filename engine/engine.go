@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"sync"
 
-	"github.com/insidersec/insider/report"
+	"github.com/PLZENTERTEXT/insider/report"
 )
 
 type Engine struct {
