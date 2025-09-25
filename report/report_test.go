@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/PLZENTERTEXT/insider/report"
+	"github.com/insidersec/insider/report"
 	"github.com/stretchr/testify/require"
 )
 

@@ -1,6 +1,6 @@
 package insider
 
-import "github.com/PLZENTERTEXT/insider/report"
+import "github.com/insidersec/insider/report"
 
 func getManifestPermission() []report.ManifestPermission {
 	return []report.ManifestPermission{

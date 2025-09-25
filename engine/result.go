@@ -3,7 +3,7 @@ package engine
 import (
 	"fmt"
 
-	"github.com/PLZENTERTEXT/insider/report"
+	"github.com/insidersec/insider/report"
 )
 
 type Result struct {

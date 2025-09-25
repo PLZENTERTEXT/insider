@@ -8,14 +8,14 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
-	"regexp"
 	"runtime"
 	"strings"
 	"time"
 
-	"github.com/PLZENTERTEXT/insider"
-	"github.com/PLZENTERTEXT/insider/engine"
-	"github.com/PLZENTERTEXT/insider/rule"
+	"github.com/dlclark/regexp2"
+	"github.com/insidersec/insider"
+	"github.com/insidersec/insider/engine"
+	"github.com/insidersec/insider/rule"
 )
 
 const (
@@ -177,18 +177,18 @@ func main() {
 
 }
 
-func buildExpressions(expressions []string) ([]*regexp.Regexp, error) {
-	regexps := make([]*regexp.Regexp, 0, len(expressions))
+func buildExpressions(expressions []string) ([]*regexp2.regexp2, error) {
+	regexp2s := make([]*regexp2.regexp2, 0, len(expressions))
 
 	for _, expr := range expressions {
-		re, err := regexp.Compile(expr)
+		re, err := regexp2.Compile(expr)
 		if err != nil {
 			return nil, fmt.Errorf("compile %s: %w", expr, err)
 		}
-		regexps = append(regexps, re)
+		regexp2s = append(regexp2s, re)
 	}
 
-	return regexps, nil
+	return regexp2s, nil
 }
 
 func techAnalyzer(tech string, logger *log.Logger) (insider.TechAnalyzer, error) {

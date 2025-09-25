@@ -3,7 +3,7 @@ package rule
 import (
 	"regexp"
 
-	"github.com/PLZENTERTEXT/insider/engine"
+	"github.com/insidersec/insider/engine"
 )
 
 var CoreRules []engine.Rule = []engine.Rule{

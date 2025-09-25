@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/PLZENTERTEXT/insider/engine"
+	"github.com/insidersec/insider/engine"
 )
 
 type RuleBuilder struct{}
@@ -22,12 +22,6 @@ func (r RuleBuilder) Build(ctx context.Context, techs ...engine.Language) ([]eng
 			rules = append(rules, CoreRules...)
 		case engine.Csharp:
 			rules = append(rules, CsharpRules...)
-		case engine.Javascript:
-			rules = append(rules, JavascriptRules...)
-		case engine.Android, engine.Java:
-			rules = append(rules, AndroidRules...)
-		case engine.Ios:
-			rules = append(rules, IosRules...)
 		default:
 			return nil, fmt.Errorf("invalid tech %s", string(tech))
 		}

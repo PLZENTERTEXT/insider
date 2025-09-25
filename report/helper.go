@@ -45,7 +45,7 @@ func resumeReport(score float64, vulnerabilities, none, low, medium, high, criti
 	fmt.Fprintf(out, "Total\t\t%3v \n", total)
 	fmt.Fprintln(out, "-----------------------------------------------------------------------------------------------------------------------")
 	fmt.Fprintln(out, "You are using the Insider open source version. If you like the product and want more features,")
-	fmt.Fprintln(out, "visit http://PLZENTERTEXT.io and get to know our enterprise version.")
+	fmt.Fprintln(out, "visit http://insidersec.io and get to know our enterprise version.")
 	fmt.Fprintln(out, "If you are a developer, then you can contribute to the improvement of the software while using an open source version")
 	fmt.Fprintln(out, "-----------------------------------------------------------------------------------------------------------------------")
 }

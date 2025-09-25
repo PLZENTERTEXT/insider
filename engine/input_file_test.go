@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/PLZENTERTEXT/insider/engine"
+	"github.com/insidersec/insider/engine"
 	"github.com/stretchr/testify/assert"
 )
 

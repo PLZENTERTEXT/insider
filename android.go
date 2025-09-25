@@ -6,10 +6,11 @@ import (
 	"errors"
 	"log"
 	"os"
+
 	"regexp"
 
-	"github.com/PLZENTERTEXT/insider/engine"
-	"github.com/PLZENTERTEXT/insider/report"
+	"github.com/insidersec/insider/engine"
+	"github.com/insidersec/insider/report"
 )
 
 const (

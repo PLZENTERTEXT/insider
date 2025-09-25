@@ -6,11 +6,12 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"regexp"
 	"strings"
 
-	"github.com/PLZENTERTEXT/insider/engine"
-	"github.com/PLZENTERTEXT/insider/report"
+	"regexp"
+
+	"github.com/insidersec/insider/engine"
+	"github.com/insidersec/insider/report"
 )
 
 var (

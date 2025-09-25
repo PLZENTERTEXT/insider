@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 
-	"github.com/PLZENTERTEXT/insider/report"
+	"github.com/insidersec/insider/report"
 )
 
 type TechAnalyzer interface {

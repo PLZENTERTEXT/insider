@@ -6,11 +6,11 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"regexp"
 	"strconv"
 	"sync"
 
-	"github.com/PLZENTERTEXT/insider/report"
+	"github.com/dlclark/regexp2"
+	"github.com/insidersec/insider/report"
 )
 
 type spawnFn func(file InputFile, rules []Rule) error
@@ -64,7 +64,7 @@ type scanner struct {
 	mutext      *sync.Mutex
 	wg          *sync.WaitGroup
 	result      *Result
-	exclude     []*regexp.Regexp
+	exclude     []*regexp2.Regexp
 	ruleBuilder RuleBuilder
 	ruleSet     RuleSet
 	errors      []error
@@ -196,7 +196,12 @@ func (s *scanner) language(file string) (Language, error) {
 
 func (s *scanner) ignore(path string) bool {
 	for _, re := range s.exclude {
-		if re.MatchString(path) {
+		match, err := re.MatchString(path)
+		if err != nil {
+			s.logger.Printf("Error matching exclude regexp: %v", err)
+			continue
+		}
+		if match {
 			return true
 		}
 	}

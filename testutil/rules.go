@@ -2,11 +2,13 @@ package testutil
 
 import (
 	"context"
-	"regexp"
+
 	"testing"
 
-	"github.com/PLZENTERTEXT/insider/engine"
-	"github.com/PLZENTERTEXT/insider/rule"
+	"regexp"
+
+	"github.com/insidersec/insider/engine"
+	"github.com/insidersec/insider/rule"
 )
 
 type fakeRuleBuilder struct {
